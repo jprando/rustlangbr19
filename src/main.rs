@@ -38,7 +38,7 @@ fn show_saved<T>(entity: Result<&T, &str>)
     match entity {
         Ok(value) => {
             println!("ID {:?}", value.get_id());
-            println!("{:?}", entity)
+            println!("{:?}", value)
         },
         Err(msg) => {
             println!("## ERROR {:?}", msg)
